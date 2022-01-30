@@ -1,0 +1,7 @@
+1. Install docker and docker-compose
+
+2. Install Portainer
+
+3. Stop dhcp server of pmos for usb networking on every boot
+sudo nano /etc/local.d/README
+pkill unudhcp 
