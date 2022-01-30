@@ -31,23 +31,25 @@ $ pmbootstrap install --sdcard=/dev/mmcblk
 $ pmbootstrap flasher flash_rootfs
 
 6. Create a pmos.conf file to boot on pmos
-<title    postmarketOS
+<nowiki>
+title    postmarketOS
 volume   80868086-8086-8086-8086-000000000007
 linux    /vmlinuz
 initrd   /intel-ucode.img
 initrd   /acpi-me176c.img
 initrd   /initramfs
 # Comment this out to get more output on screen while booting
-options  console=null>
+options  console=null</nowiki>
 
 7. To boot by default on pmos change loader.conf file
   esp/loader/loader.conf
-  Chhange andrdoid by pmos
-  <default  android
-auto-entries  no
+  Change andrdoid by pmos
+  <nowiki>
+  default  android
+auto-entries  no</nowiki>
 
 # Uncomment this to always show the boot menu
-#timeout  3>
+#timeout  3
 Then you can use adb push to move the the file in the internal storage
     
   
