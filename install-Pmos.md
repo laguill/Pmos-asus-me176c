@@ -32,14 +32,14 @@ $ pmbootstrap flasher flash_rootfs
 
 6. Create a pmos.conf file to boot on pmos
 <nowiki>
-title    postmarketOS
+'title    postmarketOS
 volume   80868086-8086-8086-8086-000000000007
 linux    /vmlinuz
 initrd   /intel-ucode.img
 initrd   /acpi-me176c.img
 initrd   /initramfs
-# Comment this out to get more output on screen while booting
-options  console=null</nowiki>
+//Comment this out to get more output on screen while booting
+options  console=null</nowiki>'
 
 7. To boot by default on pmos change loader.conf file
   esp/loader/loader.conf
